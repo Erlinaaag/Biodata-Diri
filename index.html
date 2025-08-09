@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./Styles/style.css" />
+    <title>Erlin Agesti Risadi - Informatics Engineer</title>
+  </head>
+  <script>
+    const icons = document.querySelectorAll(".social-icons a");
+
+    icons.forEach((icon) => {
+      icon.addEventListener("click", () => {
+        icon.classList.add("icon-clicked");
+        setTimeout(() => {
+          icon.classList.remove("icon-clicked");
+        }, 300); // waktu animasi 0.3s
+      });
+    });
+  </script>
+
+  <body>
+    <!--Header-->
+    <header>
+      <div class="main-container">
+        <div class="nav">
+          <div class="logo">
+            <a href="/">My Portfolio</a>
+          </div>
+          <nav>
+            <ul>
+              <li><a href="#About">About</a></li>
+              <li><a href="#Experiences">Experiences</a></li>
+              <li><a href="#Education">Education</a></li>
+              <li><a href="#Contact">Contact</a></li>
+            </ul>
+          </nav>
+          <div class="burger">
+            <div class="line-1"></div>
+            <div class="line-2"></div>
+            <div class="line-3"></div>
+          </div>
+        </div>
+      </div>
+      <section id="hero">
+        <div class="hero-left">
+          <h3 class="pre-title">My name is</h3>
+          <h1 class="hero-name"><span>Erlin</span> Agesti Risadi</h1>
+          <p>
+            I am an Informatics Engineering student at the Institut Teknologi
+            Sumatera (ITERA), class of 2024. I have a strong interest in
+            technology, problem-solving, and how digital systems impact our
+            daily lives. Currently, I am learning various fields such as
+            programming, data structures, and software development to prepare
+            myself for a future in tech.
+          </p>
+        </div>
+        <div class="hero-right">
+          <img src="./images/hero.jpg" class="hero-img" alt="Erlin photo" ; />
+        </div>
+      </section>
+    </header>
+    <!--End of Header-->
+    <!--about-->
+    <section id="About">
+      <div class="About main-container">
+        <h3 class="pre-title">About</h3>
+        <h1 class="section-title about-title">Get To Know Me</h1>
+        <div class="grid-3">
+          <!--About 1-->
+          <div class="about">
+            <div class="about-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M23 5v13.883l-1 .117v-16c-3.895.119-7.505.762-10.002 2.316-2.496-1.554-6.102-2.197-9.998-2.316v16l-1-.117v-13.883h-1v15h9.057c1.479 0 1.641 1 2.941 1 1.304 0 1.461-1 2.942-1h9.06v-15h-1zm-12 13.645c-1.946-.772-4.137-1.269-7-1.484v-12.051c2.352.197 4.996.675 7 1.922v11.613zm9-1.484c-2.863.215-5.054.712-7 1.484v-11.613c2.004-1.247 4.648-1.725 7-1.922v12.051z"
+                />
+              </svg>
+            </div>
+            <h4>Books</h4>
+            <p>
+              In quiet moments, I enjoy exploring thoughts and perspectives that
+              challenge the way I see the world.
+            </p>
+          </div>
+          <!--About 2-->
+          <div class="about">
+            <div class="about-icon">
+              <svg
+                width="24"
+                height="24"
+                xmlns="http://www.w3.org/2000/svg"
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+              >
+                <path
+                  d="M24 20h-3v4l-5.333-4h-7.667v-4h2v2h6.333l2.667 2v-2h3v-8.001h-2v-2h4v12.001zm-6-6h-9.667l-5.333 4v-4h-3v-14.001h18v14.001zm-9-4.084h-5v1.084h5v-1.084zm5-2.916h-10v1h10v-1zm0-3h-10v1h10v-1z"
+                />
+              </svg>
+            </div>
+            <h4>Language</h4>
+            <p>
+              Exploring how thoughts are shaped through different ways of
+              speaking helps me see the world from new angles.
+            </p>
+          </div>
+          <!--About 3-->
+          <div class="about">
+            <div class="about-icon">
+              <svg
+                width="24"
+                height="24"
+                xmlns="http://www.w3.org/2000/svg"
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+              >
+                <path
+                  d="M16 3.383l-.924-.383-7.297 17.617.924.383 7.297-17.617zm.287 3.617l6.153 4.825-6.173 5.175.678.737 7.055-5.912-7.048-5.578-.665.753zm-8.478 0l-6.249 4.825 6.003 5.175-.679.737-6.884-5.912 7.144-5.578.665.753z"
+                />
+              </svg>
+            </div>
+            <h4>Coding</h4>
+            <p>
+              There’s something magical about turning lines of thought into
+              something that actually moves, responds, and creates.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--end of about-->
+
+    <!--Experiences-->
+    <section id="Experiences">
+      <div class="experience main-container">
+        <h3 class="pre-title">My Works</h3>
+        <h1 class="section-title experience-title">Featured Experiences</h1>
+
+        <div class="box-container">
+          <!-- Experience 1 -->
+          <div class="experience box">
+            <div class="experience-icon" style="font-size: 2rem">🎨</div>
+            <h4>UI/UX Design</h4>
+            <p>
+              Currently exploring the fundamentals of UI/UX design through Figma
+              to bring ideas to life visually.
+            </p>
+          </div>
+
+          <!-- Experience 2 -->
+          <div class="experience box">
+            <div class="experience-icon" style="font-size: 2rem">💻</div>
+            <h4>Web Developer</h4>
+            <p>
+              Every line of code I write is a small step closer to creating
+              beautiful websites from scratch.
+            </p>
+          </div>
+
+          <!-- Experience 3 -->
+          <div class="experience box">
+            <div class="experience-icon" style="font-size: 2rem">🤖</div>
+            <h4>Arduino Enthusiast</h4>
+            <p>
+              Currently learning Arduino to better understand how hardware and
+              software interact in embedded systems.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--End of experience-->
+    <!--Education-->
+    <section id="Education">
+      <div class="main-container">
+        <div class="pre-title">Education</div>
+        <h1 class="section-title">My Education</h1>
+
+        <div class="grid-2">
+          <!-- SMA -->
+          <div class="edu">
+            <div class="icon-edu">
+              <!-- Icon sekolah -->
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="40"
+                width="40"
+                fill="currentColor"
+              >
+                <path
+                  d="M20 3 2 12l18 9 18-9L20 3zm0 2.18L34.62 12 20 19.82 5.38 12 20 5.18zm0 17.32 7.78-3.89L38 20v2l-18 9-18-9v-2l10.22-1.39L20 22.5z"
+                />
+              </svg>
+            </div>
+            <h4>SMAN 1 Terbanggi Besar</h4>
+            <p>2022 - 2024</p>
+            <p>Science Class</p>
+          </div>
+
+          <!-- Kuliah -->
+          <div class="edu">
+            <div class="icon-edu">
+              <!-- Icon universitas -->
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="40"
+                width="40"
+                fill="currentColor"
+              >
+                <path
+                  d="M20 2L2 10l18 8 18-8L20 2zm0 3.2L32.7 10 20 16.8 7.3 10 20 5.2zM5 13v11h30V13h-2v9H7v-9H5z"
+                />
+              </svg>
+            </div>
+            <h4>Institut Teknologi Sumatera</h4>
+            <p>2024 - Sekarang</p>
+            <p>S1 Teknik Informatika</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Contact-->
+    <section id="Contact">
+      <div class="main-container">
+        <div class="pre-title">Contact</div>
+        <h1 class="section-title">Get in Touch</h1>
+        <div class="grid-3">
+          <!-- Instagram -->
+          <a
+            href="https://instagram.com/erliinag.str_"
+            target="_blank"
+            class="contact-item"
+          >
+            <div class="contact-icon">
+              <!-- IG Icon -->
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="24"
+                width="24"
+                fill="currentColor"
+              >
+                <path
+                  d="M7.5 2h9A5.5 5.5 0 0122 7.5v9a5.5 5.5 0 01-5.5 5.5h-9A5.5 5.5 0 012 16.5v-9A5.5 5.5 0 017.5 2zm9 2h-9A3.5 3.5 0 004 7.5v9A3.5 3.5 0 007.5 20h9a3.5 3.5 0 003.5-3.5v-9A3.5 3.5 0 0016.5 4zm-4.5 3a5 5 0 110 10 5 5 0 010-10zm0 2a3 3 0 100 6 3 3 0 000-6zm4.75-.75a.75.75 0 110 1.5.75.75 0 010-1.5z"
+                />
+              </svg>
+            </div>
+            <h4>Instagram</h4>
+            <p>@erliinag.str_</p>
+          </a>
+
+          <!-- LinkedIn -->
+          <a
+            href="https://linkedin.com/in/erlin-agesti-risadi"
+            target="_blank"
+            class="contact-item"
+          >
+            <div class="contact-icon">
+              <!-- LinkedIn Icon -->
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="24"
+                width="24"
+                fill="currentColor"
+              >
+                <path
+                  d="M4.98 3.5a2.5 2.5 0 110 5.001 2.5 2.5 0 010-5zM2.5 9h5v12h-5zM9 9h4.7v1.56h.07a5.14 5.14 0 014.63-2.56c4.95 0 5.86 3.26 5.86 7.5V21h-5v-6c0-1.43-.02-3.28-2-3.28-2 0-2.3 1.56-2.3 3.17V21h-5z"
+                />
+              </svg>
+            </div>
+            <h4>LinkedIn</h4>
+            <p>linkedin.com/in/erlin-agesti-risadi</p>
+          </a>
+
+          <!-- Email -->
+          <a
+            href="mailto:erlinagstrsdi28@email.com"
+            target="_blank"
+            class="contact-item"
+          >
+            <div class="contact-icon">
+              <!-- Email Icon -->
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="24"
+                width="24"
+                fill="currentColor"
+              >
+                <path
+                  d="M20 4H4a2 2 0 00-2 2v1.8l10 6.2 10-6.2V6a2 2 0 00-2-2zm0 4.25L12 14 4 8.25V18a2 2 0 002 2h12a2 2 0 002-2V8.25z"
+                />
+              </svg>
+            </div>
+            <h4>Email</h4>
+            <p>erlinagstrsdi28@email.com</p>
+          </a>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
